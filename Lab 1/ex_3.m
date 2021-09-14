@@ -1,0 +1,10 @@
+clear all, close all, clc; 
+Co=1;
+Vo=1; Vf=10;
+[V,C]=ode45('ex_3_fun',[Vo Vf], Co); 
+display('Concentration at 10L');
+display(C(end));
+plot(V,C);
+title('Concentration vs Volume', 'Fontsize', 14);
+xlabel('Volume (L)', 'Fontsize', 12);
+ylabel('Concentration (mol/m^3)', 'Fontsize', 12);
