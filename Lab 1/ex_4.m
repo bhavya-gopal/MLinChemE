@@ -1,5 +1,5 @@
 clear all, close all, clc; 
-tf=3600; %seconds
+tf=3600;                                       
 Co=[0 0 0 0 0]; %mol/m^3
 [t,C]=ode45('ex_4_fun', [0 tf], Co);
 plot(t,C);
